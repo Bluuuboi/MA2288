@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
 pd.set_option('display.max_columns', None)
-og_data = pd.read_csv('Data_Sets/Salary Data.csv')
+og_data = pd.read_csv('../Data_Sets/Salary Data.csv')
 og_data = og_data.drop('Job Title', axis=1)
 # print(og_data.head())
 # print(og_data.describe())

@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 
-df = pd.read_csv('Data_Sets/winequality-red.csv')
+df = pd.read_csv('../Data_Sets/winequality-red.csv')
 # print(df.head())
 
 data_split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)

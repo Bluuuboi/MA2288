@@ -9,7 +9,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import r2_score
 
-train_set = pd.read_csv('Data_Sets/train_energy_data.csv')
+train_set = pd.read_csv('../Data_Sets/train_energy_data.csv')
 train_set = pd.get_dummies(train_set, columns=['Building Type', 'Day of Week'], drop_first=True)
 pd.set_option('display.max_columns', None)
 
@@ -40,7 +40,7 @@ print("Root Mean Square Error of Training set:", root_mse_train)
 print("")
 
 #--TESTING WITH TEST SET#
-test_set = pd.read_csv('Data_Sets/test_energy_data.csv')
+test_set = pd.read_csv('../Data_Sets/test_energy_data.csv')
 test_set = pd.get_dummies(test_set, columns=['Building Type', 'Day of Week'], drop_first=True)
 test_num = test_set.drop('Energy Consumption', axis = 1)
 test_label = test_set['Energy Consumption']

@@ -3,7 +3,7 @@ import numpy as np
 import seaborn as sns
 import pandas as pd
 
-df = pd.read_csv('Data_Sets/SOCR-HeightWeight.csv')
+df = pd.read_csv('../Data_Sets/SOCR-HeightWeight.csv')
 
 #Separating Data
 height_data =  df['Height(Inches)']

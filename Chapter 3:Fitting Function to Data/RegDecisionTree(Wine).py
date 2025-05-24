@@ -8,7 +8,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
 from sklearn import tree
 
-df = pd.read_csv('Data_Sets/winequality-red.csv')
+df = pd.read_csv('../Data_Sets/winequality-red.csv')
 # print(df.head())
 
 data_split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
